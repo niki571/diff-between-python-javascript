@@ -21,7 +21,7 @@ record the difference between python and javascript, during my learning
 | concat            | arr1 + arr2                                  | arr1.concat(arr2)                              |
 |                   | ["O"] * 5                                    |                                                |
 |                   | "---".join(arr)                              | arr.join("---")                                |
-|                   | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                        |
+| include           | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                        |
 | sum               | sum(arr)                                     | arr.reduce(function(){}                        |
 | sort              | sorted([11,2,55])                            | arr.sort()                                     |
 | reverse           | list(reversed[11,2,55])                      | arr.reverse()                                  |
@@ -32,6 +32,8 @@ record the difference between python and javascript, during my learning
 |                   | obj.items() => arr * disordered              |                                                |
 |                   | obj.keys() => arr * disordered               |                                                |
 |                   | obj.values() => arr * disordered             |                                                |
+| include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
+| del item          | del obj[key]                                 |                                                |
 | print             | print 'a', 'b'                               |                                                |
 
 ## range
@@ -44,3 +46,7 @@ record the difference between python and javascript, during my learning
 
 ## bitwise operator
 `0b` `bin(5)`
+
+## Class
+`class Animal(object):`
+`    pass`
