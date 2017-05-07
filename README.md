@@ -5,6 +5,7 @@ record the difference between python and javascript, during my learning
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | declare variable  | no need                                      | need let or const                              |
 | comment           | # for single line, """ for multi line        |                                                |
+|                   | True                                         | true                                           |
 | if                | elif                                         | elseif                                         |
 | while             | while: else:                                 | while                                          |
 |                   | for item in arr: else:                       |                                                |
@@ -20,13 +21,26 @@ record the difference between python and javascript, during my learning
 | concat            | arr1 + arr2                                  | arr1.concat(arr2)                              |
 |                   | ["O"] * 5                                    |                                                |
 |                   | "---".join(arr)                              | arr.join("---")                                |
+|                   | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                        |
+| sum               | sum(arr)                                     | arr.reduce(function(){}                        |
+| sort              | sorted([11,2,55])                            | arr.sort()                                     |
+| reverse           | list(reversed[11,2,55])                      | arr.reverse()                                  |
+| filter            |filter(lambda x: x % 3 == 0, my_list)         | arr.filter(function() {})                      |
 |                   |                                              |                                                |
 | DICTIONARY/OBJECT |                                              |                                                |
 | traversing        | for key in obj: *disordered                  | for key in obj: *disordered                    |
-| sum               | sum(arr)                                     | arr.reduce(function(){}                        |
+|                   | obj.items() => arr * disordered              |                                                |
+|                   | obj.keys() => arr * disordered               |                                                |
+|                   | obj.values() => arr * disordered             |                                                |
 | print             | print 'a', 'b'                               |                                                |
 
 ## range
 `range(6) # => [0,1,2,3,4,5]`
 `range(1,6) # => [1,2,3,4,5]`
 `range(1,6,3) # => [1,4]`
+
+## list comprehension
+`[i for i in range(51) if i % 2 == 0]`
+
+## bitwise operator
+`0b`
