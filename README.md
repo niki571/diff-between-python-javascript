@@ -43,4 +43,4 @@ record the difference between python and javascript, during my learning
 `[i for i in range(51) if i % 2 == 0]`
 
 ## bitwise operator
-`0b`
+`0b` `bin(5)`
