@@ -12,6 +12,7 @@ Record the difference between python and javascript, during my learning.
 | string            | str.lower()                                  | str.toLowerCase()                              |
 | string            | str(num)                                     | num.toString()                                 |
 | str joint         | str can't joint num                          | can                                            |
+| only letters      | str.isalpha()                                |                                                |
 
 ## Control Flow
 |                   | python                                       | javascript                                     |
