@@ -1,12 +1,19 @@
 # diff-between-python-javascript
 Record the difference between python and javascript, during my learning.
 
-|                   | python                                       | javascript                                     |
+## Basic
+|                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | declare variable  | no need                                      | need let or const                              |
-| comment           | # for single line, """ for multi line        |                                                |
+| comment           | # for single line, """ for multi lines       |                                                |
 | boolean           | True                                         | true                                           |
+| function          | def, :                                       | function, {}                                   |
+| decimals          | "%.2f" % total                               |                                                |
+| string            | str.lower()                                  | str.toLowerCase()                              |
+| string            | str(num)                                     | num.toString()                                 |
+| str joint         | str can't joint num                          | can                                            |
 
+## Control Flow
 |                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | if                | elif                                         | elseif                                         |
@@ -14,10 +21,10 @@ Record the difference between python and javascript, during my learning.
 |                   | for item in arr: else:                       |                                                |
 |                   |                                              |                                                |
 
-|                   | python                                       | javascript                                     |
+## List/Array
+|                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
-| LIST/ARRAY        |                                              |                                                |
-| length            | len(arr)                                     | arr.length                                     |
+| length            | len(list)                                    | arr.length                                     |
 | add item          | arr.append(item)                             | arr.push(item)                                 |
 |                   | for index, item in enumerate(arr):           |                                                |
 |                   | for a, b in zip(list_a, list_b):             |                                                |
@@ -34,9 +41,9 @@ Record the difference between python and javascript, during my learning.
 | filter            |filter(lambda x: x % 3 == 0, my_list)         | arr.filter(function() {})                      |
 |                   |                                              |                                                |
 
+## Dictionary/Object
 |                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
-| DICTIONARY/OBJECT |                                              |                                                |
 | traversing        | for key in obj: *disordered                  | for key in obj: *disordered                    |
 |                   | obj.items() => arr * disordered              |                                                |
 |                   | obj.keys() => arr * disordered               |                                                |
