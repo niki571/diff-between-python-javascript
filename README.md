@@ -15,6 +15,7 @@ Record the difference between python and javascript, during my learning.
 | if only letters   | str.isalpha() => True                        |                                                |
 |                   | dir(math) => list                            |                                                |
 | type              | type(5) == int                               | typeof [1,2,3] == 'object'                     |
+| print             | print 'a', 'b'                               |                                                |
 
 ## Control Flow
 |                   | python                                       | javascript                                     |
@@ -40,7 +41,7 @@ Record the difference between python and javascript, during my learning.
 |                   | ["O"] * 5                                    |                                                |
 |                   | "---".join(arr)                              | arr.join("---")                                |
 | include           | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                        |
-| sum               | sum(arr)                                     | arr.reduce(function(){}                        |
+| sum               | sum(list)                                    | arr.reduce(function(){}                        |
 | sort              | list.sort() / sorted([11,2,55])              | arr.sort()                                     |
 | reverse           | list(reversed[11,2,55])                      | arr.reverse()                                  |
 | filter            |filter(lambda x: x % 3 == 0, my_list)         | arr.filter(function() {})                      |
@@ -51,12 +52,11 @@ Record the difference between python and javascript, during my learning.
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | length            | len(dic)                                     |                                                |
 | del item          | del dic[key]                                 |                                                |
-| traversing        | for key in obj: *disordered                  | for key in obj: *disordered                    |
+| traversing        | for key in dic: *disordered                  | for key in obj: *disordered                    |
 |                   | obj.items() => arr * disordered              |                                                |
 |                   | obj.keys() => arr * disordered               |                                                |
 |                   | obj.values() => arr * disordered             |                                                |
 | include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
-| print             | print 'a', 'b'                               |                                                |
 
 ## range
 `range(6) # => [0,1,2,3,4,5]`
