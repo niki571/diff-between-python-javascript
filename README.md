@@ -1,15 +1,21 @@
 # diff-between-python-javascript
-record the difference between python and javascript, during my learning
+Record the difference between python and javascript, during my learning.
 
 |                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | declare variable  | no need                                      | need let or const                              |
 | comment           | # for single line, """ for multi line        |                                                |
-|                   | True                                         | true                                           |
+| boolean           | True                                         | true                                           |
+
+|                   | python                                       | javascript                                     |
+|:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | if                | elif                                         | elseif                                         |
 | while             | while: else:                                 | while                                          |
 |                   | for item in arr: else:                       |                                                |
 |                   |                                              |                                                |
+
+|                   | python                                       | javascript                                     |
+|:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | LIST/ARRAY        |                                              |                                                |
 | length            | len(arr)                                     | arr.length                                     |
 | add item          | arr.append(item)                             | arr.push(item)                                 |
@@ -27,6 +33,9 @@ record the difference between python and javascript, during my learning
 | reverse           | list(reversed[11,2,55])                      | arr.reverse()                                  |
 | filter            |filter(lambda x: x % 3 == 0, my_list)         | arr.filter(function() {})                      |
 |                   |                                              |                                                |
+
+|                   | python                                       | javascript                                     |
+|:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | DICTIONARY/OBJECT |                                              |                                                |
 | traversing        | for key in obj: *disordered                  | for key in obj: *disordered                    |
 |                   | obj.items() => arr * disordered              |                                                |
