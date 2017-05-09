@@ -39,7 +39,7 @@ Record the difference between python and javascript, during my learning.
 |                   | for a, b in zip(list_a, list_b):             |                                              |
 | get num arr       | range(3,5)                                   | const arr = [3,4];                           |
 | concat            | [1,2] + [3,4] => [1,2,3,4]                   | arr1.concat(arr2)                            |
-|                   | ["O"] * 3 => ["0","0","0"]                   |                                              |
+|                   | ["O"] * 3 => ["O","O","O"]                   |                                              |
 | join              | "---".join(list)                             | arr.join("---")                              |
 | include           | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                      |
 | sum               | sum(list)                                    | arr.reduce(function(){}                      |
@@ -54,9 +54,9 @@ Record the difference between python and javascript, during my learning.
 | length            | len(dic)                                     |                                                |
 | del item          | del dic[key]                                 |                                                |
 | traversing        | for key in dic: *disordered                  | for key in obj: *disordered                    |
-|                   | obj.items() => arr * disordered              |                                                |
-|                   | obj.keys() => arr * disordered               |                                                |
-|                   | obj.values() => arr * disordered             |                                                |
+|                   | obj.items() => arr *disordered               |                                                |
+|                   | obj.keys() => arr *disordered                |                                                |
+|                   | obj.values() => arr *disordered              |                                                |
 | include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
 
 ## list comprehension
