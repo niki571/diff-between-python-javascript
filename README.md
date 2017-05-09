@@ -16,8 +16,9 @@ Record the difference between python and javascript, during my learning.
 |                   | dir(math) => list                            |                                                |
 | type              | type(5) == int                               | typeof [1,2,3] == 'object'                     |
 | print             | print 'a', 'b'                               |                                                |
+| import            | from random import randint                   |                                                |
 
-## Control Flow
+## Loop
 |                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | if                | elif                                         | elseif                                         |
@@ -26,26 +27,26 @@ Record the difference between python and javascript, during my learning.
 |                   |                                              |                                                |
 
 ## List/ Array
-|                   | python                                       | javascript                                     |
-|:----------------- |:-------------------------------------------- |:---------------------------------------------- |
-| length            | len(list)                                    | arr.length                                     |
-| add item          | list.append(item)                            | arr.push(item)                                 |
-| index item        | list.index(item)                             | arr.indexOf(item)                              |
-| insert item       | list.insert(index, item)                     | arr.splice(index, item)                        |
-| del item          | list.remove(item) / del(arr[i])              | arr.filter(function(a){return a != item}       |
-| traversing        | for item in list:/for i in range(len(list)): | for(var i = 0; i < arr.length; i++)            |
-|                   | for index, item in enumerate(arr):           |                                                |
-|                   | for a, b in zip(list_a, list_b):             |                                                |
-| get num arr       | range(3,5)                                   | const arr = [3,4];                             |
-| concat            | arr1 + arr2                                  | arr1.concat(arr2)                              |
-|                   | ["O"] * 5                                    |                                                |
-|                   | "---".join(arr)                              | arr.join("---")                                |
-| include           | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                        |
-| sum               | sum(list)                                    | arr.reduce(function(){}                        |
-| sort              | list.sort() / sorted([11,2,55])              | arr.sort()                                     |
-| reverse           | list(reversed[11,2,55])                      | arr.reverse()                                  |
-| filter            |filter(lambda x: x % 3 == 0, my_list)         | arr.filter(function() {})                      |
-|                   |                                              |                                                |
+|                   | python                                       | javascript                                   |
+|:----------------- |:-------------------------------------------- |:-------------------------------------------- |
+| length            | len(list)                                    | arr.length                                   |
+| add item          | list.append(item)                            | arr.push(item)                               |
+| index item        | list.index(item)                             | arr.indexOf(item)                            |
+| insert item       | list.insert(index, item)                     | arr.splice(index, item)                      |
+| del item          | list.remove(item)/del(list[i])/list.pop(i)   | arr.filter(function(a){return a != item}     |
+| traversing        | for item in list:/for i in range(len(list)): | for(var i = 0; i < arr.length; i++)          |
+|                   | for index, item in enumerate(arr):           |                                              |
+|                   | for a, b in zip(list_a, list_b):             |                                              |
+| get num arr       | range(3,5)                                   | const arr = [3,4];                           |
+| concat            | [1,2] + [3,4] => [1,2,3,4]                   | arr1.concat(arr2)                            |
+|                   | ["O"] * 3 => ["0","0","0"]                   |                                              |
+| join              | "---".join(list)                             | arr.join("---")                              |
+| include           | 1 in [1,2] / 1 not in [1,2]                  | indexOf                                      |
+| sum               | sum(list)                                    | arr.reduce(function(){}                      |
+| sort              | list.sort() / sorted([11,2,55])              | arr.sort()                                   |
+| reverse           | list(reversed[11,2,55])                      | arr.reverse()                                |
+| filter            | filter(lambda x: x % 3 == 0, my_list)        | arr.filter(function() {})                    |
+|                   |                                              |                                              |
 
 ## Dictionary/ Object
 |                   | python                                       | javascript                                     |
@@ -57,11 +58,6 @@ Record the difference between python and javascript, during my learning.
 |                   | obj.keys() => arr * disordered               |                                                |
 |                   | obj.values() => arr * disordered             |                                                |
 | include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
-
-## range
-`range(6) # => [0,1,2,3,4,5]`
-`range(1,6) # => [1,2,3,4,5]`
-`range(1,6,3) # => [1,4]`
 
 ## list comprehension
 `[i for i in range(51) if i % 2 == 0]`
