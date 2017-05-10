@@ -22,7 +22,7 @@ Record the difference between python and javascript, during my learning.
 |                   | python                                       | javascript                                     |
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | if                | elif                                         | elseif                                         |
-| while             | while: else:                                 | while                                          |
+| while             | while: break else:                           | while                                          |
 |                   | for item in arr: else:                       |                                                |
 |                   |                                              |                                                |
 
