@@ -23,7 +23,7 @@ Record the difference between python and javascript, during my learning.
 |:----------------- |:-------------------------------------------- |:---------------------------------------------- |
 | if                | elif                                         | elseif                                         |
 | while             | while: break else:                           | while                                          |
-|                   | for item in arr: else:                       |                                                |
+|                   | for item in list: break else:                |                                                |
 |                   |                                              |                                                |
 
 ## List/ Array
@@ -35,7 +35,7 @@ Record the difference between python and javascript, during my learning.
 | insert item       | list.insert(index, item)                     | arr.splice(index, item)                      |
 | del item          | list.remove(item)/del(list[i])/list.pop(i)   | arr.filter(function(a){return a != item}     |
 | traversing        | for item in list:/for i in range(len(list)): | for(var i = 0; i < arr.length; i++)          |
-|                   | for index, item in enumerate(arr):           |                                              |
+|                   | for index, item in enumerate(list):          |                                              |
 |                   | for a, b in zip(list_a, list_b):             |                                              |
 | get num arr       | range(3,5)                                   | const arr = [3,4];                           |
 | concat            | [1,2] + [3,4] => [1,2,3,4]                   | arr1.concat(arr2)                            |
@@ -45,7 +45,7 @@ Record the difference between python and javascript, during my learning.
 | sum               | sum(list)                                    | arr.reduce(function(){}                      |
 | sort              | list.sort() / sorted([11,2,55])              | arr.sort()                                   |
 | reverse           | list(reversed[11,2,55])                      | arr.reverse()                                |
-| filter            | filter(lambda x: x % 3 == 0, my_list)        | arr.filter(function() {})                    |
+| filter            | filter(lambda x: x % 3 == 0, list)           | arr.filter(function() {})                    |
 |                   |                                              |                                              |
 
 ## Dictionary/ Object
@@ -54,16 +54,19 @@ Record the difference between python and javascript, during my learning.
 | length            | len(dic)                                     |                                                |
 | del item          | del dic[key]                                 |                                                |
 | traversing        | for key in dic: *disordered                  | for key in obj: *disordered                    |
-|                   | obj.items() => arr *disordered               |                                                |
+|                   | dic.items() => arr(k, v) *disordered         |                                                |
 |                   | obj.keys() => arr *disordered                |                                                |
 |                   | obj.values() => arr *disordered              |                                                |
 | include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
 
 ## list comprehension
-`[i for i in range(51) if i % 2 == 0]`
+`list = [i for i in range(51) if i % 2 == 0]`
+
+## functional programming(Lambda)
+`filter(lambda x: x % 3 == 0, list)`
 
 ## bitwise operator
-`0b` `bin(5)`
+`0b100 => 4` `bin(4) => 0b100` `int("100",2) => 4`
 
 ## Class
 `class Animal(object):`
