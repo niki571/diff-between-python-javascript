@@ -59,15 +59,43 @@ Record the difference between python and javascript, during my learning.
 |                   | obj.values() => arr *disordered              |                                                |
 | include           | a in {'a':1,'b':2} / a not in {'a':1,'b':2}  |                                                |
 
-## list comprehension
+## List comprehension
 `list = [i for i in range(51) if i % 2 == 0]`
 
-## functional programming(Lambda)
+## Functional programming(Lambda)
 `filter(lambda x: x % 3 == 0, list)`
 
-## bitwise operator
+## Bitwise Operators
 `0b100 => 4` `bin(4) => 0b100` `int("100",2) => 4`
+```
+# Left Bit Shift (<<)  
+0b000001 << 2 == 0b000100 (1 << 2 = 4)
+0b000101 << 3 == 0b101000 (5 << 3 = 40)       
+
+# Right Bit Shift (>>)
+0b0010100 >> 3 == 0b000010 (20 >> 3 = 2)
+0b0000010 >> 2 == 0b000000 (2 >> 2 = 0) 
+
+    a:  00101010  42
+    b:  00001111  15       
+================
+a & b:  00001010  10
+ 
+    a:  00101010  42
+    b:  00001111  15       
+================
+a | b:  00101111  47
+
+    a:  00101010  42
+    b:  00001111  15       
+================
+a ^ b:  00100101  37
+
+~42 = -43
+```
 
 ## Class
-`class Animal(object):`
-`    pass`
+```
+class Animal(object):
+    pass
+```
